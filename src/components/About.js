@@ -1,22 +1,11 @@
-import React from 'react'
+import React from "react";
+function About({image="https://via.placeholder.com/215",about}){
+ return(
+  <aside>
+    <img src={image} alt="blog logo"></img>
+    <p>{about}</p>
+  </aside>
 
-function About(props) {
-  return (
-    <div>
-
-        <aside>
-
-            <img src={props.image} alt='blogpost'/> 
-            <p>{props.about}</p>
-           
-        </aside>
-
-
-    </div>
-  )
+ )
 }
-About.defaultProps ={
-    image:"https://via.placeholder.com/215"
-}
-
-export default About
+export default About;
